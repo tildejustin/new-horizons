@@ -3,7 +3,7 @@ plugins {
     id "maven-publish"
 }
 
-version = "$mod_version+$target_version"
+version = mod_version
 group = maven_group
 
 base {
@@ -12,12 +12,11 @@ base {
 
 repositories {
     maven { url "https://jitpack.io" }
-    // flatDir { dirs "libs" }
 }
 
 dependencies {
     minecraft libs.minecraft
-    mappings variantOf(libs.yarn.mappings) { classifier "v2" }
+    mappings libs.yarn.mappings
     modImplementation libs.fabric.loader
 }
 
@@ -35,7 +34,6 @@ tasks.withType(JavaCompile).configureEach {
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
-    // withSourcesJar()
 }
 
 jar {

@@ -1,0 +1,2 @@
+## New Horizons
+A standalone mod that intercepts the `LevelStorage$Session::checkValid` call in `LevelStorage$Session::getIconFile`, which is known to cause crashes with WorldPreview, State-Output, and FastReset.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "new-horizons",
   "version": "${version}",
   "name": "",
   "description": "",
@@ -8,16 +8,19 @@
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/modid",
-    "sources": "https://github.com/tildejustin/modid",
-    "issues": "https://github.com/tildejustin/modid/issues"
+    "homepage": "https://modrinth.com/mod/new-horizons",
+    "sources": "https://github.com/tildejustin/new-horizons",
+    "issues": "https://github.com/tildejustin/new-horizons/issues"
   },
   "license": "MIT",
   "environment": "*",
   "mixins": [
-    "modid.mixins.json"
+    "new-horizons.mixins.json"
   ],
   "depends": {
     "minecraft": "*"
+  },
+  "breaks": {
+    "state-output": "*"
   }
 }
