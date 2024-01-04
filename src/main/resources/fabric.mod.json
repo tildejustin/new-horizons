@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "new-horizons",
   "version": "${version}",
-  "name": "",
-  "description": "",
+  "name": "New Horizons",
+  "description": "Standalone fix to the WorldPreview/State-Output IllegalStateException",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/new-horizons",
+    "homepage": "https://github.com/tildejustin/new-horizons",
     "sources": "https://github.com/tildejustin/new-horizons",
     "issues": "https://github.com/tildejustin/new-horizons/issues"
   },
